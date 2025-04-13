@@ -13,18 +13,20 @@ const AboutSection = () => {
     >
       <div >
         <h1 className="text-4xl  pt-10 ml-7">关于我们</h1>
-      <div className=" py-10 px-4 sm:px-6 lg:px-8 m-[3vh] border border-gray-500 rounded-lg">
-        <div className="max-w-6xl mx-auto">
-          <h1 className="text-3xl mb-5 ">"深蓝智算"智能体平台</h1>
-          
-          <div className="flex flex-col md:flex-row gap-8">
-            <div className="md:w-4/5">
-            <style jsx>{`
+      <div className=" py-5 px-4 sm:px-6 lg:px-8 m-[3vh] border border-gray-500 rounded-lg">
+      <style jsx>{`
                 .paragraph-spacing p {
                 margin-bottom: 2rem; 
                 line-height: 2;
                 }
               `}</style>
+
+         <div className="flex items-center mb-4 mt-1">
+          <h1 className="text-2xl">"深蓝智算"智能体平台</h1>
+          </div>
+          <div className="flex flex-col md:flex-row gap-8">
+            <div className="md:w-4/5">
+          
 
               <div className="prose prose-lg paragraph-spacing mt-4">
                 <p>
@@ -53,7 +55,6 @@ const AboutSection = () => {
             </div>
           </div>
         </div>
-      </div>
       </div>
     </section>
   );

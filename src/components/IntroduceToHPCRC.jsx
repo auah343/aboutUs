@@ -11,18 +11,19 @@ const AboutSection = () => {
         backgroundAttachment: 'scroll',
       }}
     >
-      <div className="py-10 px-4 sm:px-6 lg:px-8 m-[3vh] border border-gray-500 rounded-lg">
-        <div className="max-w-6xl m-auto">
-          <h1 className="text-3xl mb-5">高性能计算研究中心（数据协同计算团队）</h1>
-          
-          <div className="flex flex-col md:flex-row gap-8">
-            <div className="md:w-4/5">
-            <style jsx>{`
+      <div className="py-5 px-4 sm:px-6 lg:px-8 m-[3vh] border border-gray-500 rounded-lg">
+      <style jsx>{`
                 .paragraph-spacing p {
                   margin-bottom: 2rem; 
                   line-height: 2;
                 }
-              `}</style>
+              `}</style>  
+       <div className="flex items-center mb-4 mt-1">
+          <h1 className="text-2xl">高性能计算研究中心（数据协同计算团队）</h1>
+          </div>
+          <div className="flex flex-col md:flex-row gap-8">
+            <div className="md:w-4/5">
+            
 
               <div className="prose prose-lg paragraph-spacing mt-3">
                 <p >
@@ -39,7 +40,7 @@ const AboutSection = () => {
             </div>
             
             <div className="md:w-2/5 flex items-center justify-center">
-              <div className="rounded-lg overflow-hidden  bg-opacity-2 p-1">
+              <div className="rounded-lg overflow-hidden  bg-opacity-2 p-4">
                 <img 
                   src="/HPCRC.png" 
                   alt="高性能计算研究中心" 
@@ -49,7 +50,6 @@ const AboutSection = () => {
             </div>
           </div>
         </div>
-      </div>
     </section>
   );
 };
